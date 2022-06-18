@@ -1,0 +1,54 @@
+.login-container {
+	margin: 5rem auto;
+}
+.form {
+	margin: auto;
+	width: 350px;
+	max-width: 95%;
+	border-radius: 5px;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.5rem;
+	.heading {
+		h1, h3 {
+			margin: 0px;
+			color: #FFF;
+		}
+	}
+	.input-field {
+		width: 100%;
+		display: flex;
+		gap: 0.25rem;
+		flex-direction: column;
+		color: #FFF;
+		input, textarea {
+			outline: none;
+			width: 100%;
+			height: 35px;
+			border: 0px;
+			background: #FFF;
+			padding: 0px 0.5rem;
+			color: #000836;
+		}
+		textarea {
+			height: 100px;
+			resize: none;
+			padding: 0.5rem;
+		}
+		p {
+			margin: 0px;
+			font-size: 0.8rem;
+		}
+	}
+	.submit-button {
+		input {
+			background: #E22282;
+			color: #FFF;
+			padding: 0.5rem;
+			font-weight: bold;
+			border: 0px;
+		}
+	}
+}

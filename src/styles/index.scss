@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=Farro:wght@300;400;500&display=swap');
+* {
+	font-family: "Farro",  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+}
+html {
+	background: url("./background.jpg");
+	background: #000836;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body {
+	margin: 0px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	input, a, textarea {
+		outline: none;
+	}
+	input[type='button'], a, svg {
+		cursor: pointer;
+	}
+	p, pre, span, h1, h2, h3, h4, h5, h6 {
+		word-break: break-word;
+	   	white-space: pre-wrap;
+	   -moz-white-space: pre-wrap;  
+	}
+	.message-popup {
+		position: fixed;
+		background: #000836;
+		color: #FFF;
+		padding: 0.25rem 0.5rem;
+		width: 300px;
+		max-width: 95%;
+		min-height: 40px;
+		left: calc(50% - 150px);
+		transition: 0.5s top linear;
+		border: 1px solid #FFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			margin: 0px;
+		}
+	}
+	.hide-message {
+		top: -100%;
+	}
+	.show-message {
+		top: 10px;
+	}
+}

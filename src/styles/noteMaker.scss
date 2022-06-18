@@ -1,0 +1,94 @@
+.note-maker-container {
+	.note-maker-header {
+		background: #E22282;
+		display:flex;
+		align-items: center;
+		padding: 0px 1rem;
+		.username {
+			color: #FFF;
+			font-weight: bold;
+			font-size: 1.125rem;
+		}
+		.logout {
+			margin-left: auto;
+			input {
+				background: #FFF;
+				color: #E22282;
+				border: 0px;
+				padding: 0.5rem;
+			}
+		}
+	}
+	.tag-filter {
+		h5 {
+			color: #FFF;
+			text-align: center;
+		}
+		.all-tags {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 0.25rem;
+			p {
+				border: 1px solid #E22282;
+				color: #FFF;
+				margin: 0px;
+				padding: 0.125rem 0.25rem;
+			}
+			.selected-tag {
+				background: #E22282;
+			}
+		}
+	}
+	.notes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 0px;
+		list-style-type: none;
+		margin: 1.5rem auto;
+		width: 95%;
+		.note {
+			padding: 1rem;
+			background: #FFF;
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+			.note-heading {
+				display: flex;
+				align-items: center;
+				.note-actions {
+					margin-left: auto;
+					svg {
+						font-size: 0.8rem;
+						margin-left: 0.25rem;
+					}
+				}
+			}
+			pre {
+				width: 100%;
+				background: transparent;
+				border: 0px;
+				height: 100px;
+				word-break: break-word;
+			   	white-space: pre-wrap;
+			   -moz-white-space: pre-wrap;  
+			}
+			.note-tags {
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
+				flex-wrap: wrap;
+				font-size: 0.8rem;
+				color: #FFF;
+				.tag {
+					padding: 0.25rem 0.45rem;
+					background: #000836;
+				}
+			}
+		}
+	}
+}
